@@ -31,7 +31,7 @@ extern "C" {
 
 %token<m_nInt>INTEGER
 %token<m_sId>IDENTIFIER
-%token<m_cOp>OPEATOR
+%token<m_cOp>OPERATOR
 %type<m_sId>file
 %type<m_sId>tokenlist
 
