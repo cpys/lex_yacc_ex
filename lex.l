@@ -99,18 +99,3 @@ int yywrap(void) {
     puts("-----the file is end");
     return 1;   // 返回1表示读取全部结束。如果要接着读其他文件，可以这里fopen该文件，文件指针赋给yyin，并返回0
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
