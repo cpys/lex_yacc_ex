@@ -23,11 +23,6 @@ add_executable(lex_yacc_ex
         ${BISON_ex_parser_OUTPUTS}
         ${FLEX_ex_lexer_OUTPUTS})
 
-
-#set(MAIN_SRC ${OUTPUT}/lex.yy.cpp ${OUTPUT}/yacc.tab.cpp)
-#
-#add_executable(lex_yacc_ex ${MAIN_SRC})
-##
 find_library(LEX_LIB lex)
 target_link_libraries(lex_yacc_ex ${lex})
 
