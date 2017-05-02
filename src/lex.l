@@ -13,7 +13,7 @@
 // 1. 声明段
 
 #include "main.h"   // lex和yacc共用的头文件，重定义了YYSTYPE
-#include "yacc.tab.h"   // 用yacc编译yacc.y后生成的C头文件，内含%token、YYSTYPE、yylval等定义，供lex.yy.c和yacc.tab.c使用
+#include "yacc.tab.h"
 
 // 声明外部的C语言函数，可以放置到main.h中
 extern "C" {
@@ -51,7 +51,7 @@ blank_chars ([ \f\r\t\v]+)
 }
 
 {integer} { // 匹配整数
-    yylval.m_nId = yytext;
+    yylval.m_nInt = atoi(yytext);
     return INTEGER;
 }
 

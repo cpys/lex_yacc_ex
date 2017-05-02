@@ -73,7 +73,7 @@ void yyerror(const char* s) {
 
 // 程序主函数，这个函数也可以放到其他.c, .cpp文件中
 int main() {
-    const char* sFile = "file.txt";
+    const char* sFile = "../file.txt";
     FILE* fp = fopen(sFile, "r");
     if (fp == NULL) {
         printf("cannot open %s\n", sFile);
