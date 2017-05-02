@@ -27,3 +27,8 @@
 *.exe
 *.out
 *.app
+.idea/
+build/
+cmake-build-debug/
+output/
+~flex_temp_out_main_a05404
