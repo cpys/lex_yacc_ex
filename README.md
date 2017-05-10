@@ -16,6 +16,7 @@
 ## 编译
 
 ```
+# mkdir output
 # mkdir build
 # cd build
 # cmake ..
